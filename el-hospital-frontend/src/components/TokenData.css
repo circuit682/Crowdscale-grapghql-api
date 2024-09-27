@@ -1,0 +1,48 @@
+.dashboard-section {
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4caf50; /* Left border color */
+  }
+  
+  h2 {
+    color: #4caf50; /* Section heading color */
+    margin-bottom: 10px; /* Spacing below headings */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4caf50; /* Header background color for tables */
+    color: white; /* Text color for table headers */
+  }
+  
+  td {
+    background-color: #f9f9f9; /* Light background for table rows */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripe for table rows */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-section {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    table {
+      font-size: 14px; /* Smaller font size for tables */
+    }
+  }
+  

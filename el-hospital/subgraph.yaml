@@ -1,0 +1,44 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: CrowdsaleToken
+    network: mainnet
+    source:
+      address: "0x8Ae4BF2C33a8e667de34B54938B0ccD03Eb8CC06"
+      abi: CrowdsaleToken
+      startBlock: 3794169
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - UpdatedTokenInformation
+        - Upgrade
+        - UpgradeAgentSet
+        - MintingAgentChanged
+        - Minted
+        - Transfer
+        - Approval
+      abis:
+        - name: CrowdsaleToken
+          file: ./abis/CrowdsaleToken.json
+      eventHandlers:
+        - event: UpdatedTokenInformation(string,string)
+          handler: handleUpdatedTokenInformation
+        - event: Upgrade(indexed address,indexed address,uint256)
+          handler: handleUpgrade
+        - event: UpgradeAgentSet(address)
+          handler: handleUpgradeAgentSet
+        - event: MintingAgentChanged(address,bool)
+          handler: handleMintingAgentChanged
+        - event: Minted(address,uint256)
+          handler: handleMinted
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+      file: ./src/crowdsale-token.ts

@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(to bottom, #f0f4c3, #e8f5e9); /* Light gradient background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: #333; /* Dark text for readability */
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #4caf50; /* Header background color */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between sections */
+  }
+  
+  .dashboard-section {
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4caf50; /* Left border color */
+  }
+  
+  h2 {
+    color: #4caf50; /* Section heading color */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4caf50; /* Header background color for tables */
+    color: white; /* Text color for table headers */
+  }
+  
+  td {
+    background-color: #f9f9f9; /* Light background for table rows */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripe for table rows */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-content {
+      flex-direction: column;
+    }
+  }
+/* navigation styling */
+  .navbar {
+    background-color: #4caf50; /* Green background */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space below the nav */
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the links */
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Spacing between links */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+  }
+  
+  .dashboard-container i {
+    margin-right: 8px; /* Spacing between the icon and text */
+    color: #007bff; /* Change color to your theme */
+  }
+  
