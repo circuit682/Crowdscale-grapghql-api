@@ -17,7 +17,7 @@ To install the application, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/circuit682/graghql-crowdscale-data-api.git
+   git clone https://github.com/circuit682/Crowdscale-grapghql-api.git
 
 2. Navigate to the project directories to Install the required dependencies for the backend and front-end::
 ```sh
