@@ -60,5 +60,5 @@ Implementing user authentication to provide personalized data views.
 Adding more metrics to track token performance over time.
 
 ## Acknowledgments
-Thank you to the open-source community for their contributions and support in the development of web technologies.
+Thank you to the Thegraph.com for their support in the development of this web3 friendly api building ecosystem and the empowerment to native African developers.
 
